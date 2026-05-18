@@ -1,10 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
-const schedulerController = require("../controllers/schedulerController");
+const { schedulerController } = require("../controllers/schedulerController");
 const optimizeSchedule = require("../utils/optimizer");
 
-
+// ✅ Health check
 router.get("/", (req, res) => {
     res.json({
         success: true,
@@ -12,10 +12,10 @@ router.get("/", (req, res) => {
     });
 });
 
+// ✅ MAIN API (browser friendly)
+router.get("/schedule", schedulerController);
 
-router.post("/schedule", schedulerController);
-
-
+// ✅ TEST API (safe demo)
 router.get("/test", (req, res) => {
     const sampleVehicles = [
         {
