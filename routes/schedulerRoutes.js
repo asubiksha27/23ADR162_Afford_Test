@@ -4,7 +4,7 @@ const router = express.Router();
 const schedulerController = require("../controllers/schedulerController");
 const optimizeSchedule = require("../utils/optimizer");
 
-// 🔵 API health check
+
 router.get("/", (req, res) => {
     res.json({
         success: true,
@@ -12,10 +12,10 @@ router.get("/", (req, res) => {
     });
 });
 
-// 🔵 REAL API (POST)
+
 router.post("/schedule", schedulerController);
 
-// 🔵 TEST API (browser check - NO POSTMAN needed)
+
 router.get("/test", (req, res) => {
     const sampleVehicles = [
         {
