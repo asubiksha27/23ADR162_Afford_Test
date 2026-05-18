@@ -1,0 +1,27 @@
+[
+    {
+        "vehicleId": "V101",
+        "mileage": 12000,
+        "lastServiceDays": 150
+    },
+    {
+        "vehicleId": "V102",
+        "mileage": 18000,
+        "lastServiceDays": 220
+    },
+    {
+        "vehicleId": "V103",
+        "mileage": 9000,
+        "lastServiceDays": 100
+    },
+    {
+        "vehicleId": "V104",
+        "mileage": 25000,
+        "lastServiceDays": 300
+    },
+    {
+        "vehicleId": "V105",
+        "mileage": 8000,
+        "lastServiceDays": 60
+    }
+]
